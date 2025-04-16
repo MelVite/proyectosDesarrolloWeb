@@ -1,0 +1,69 @@
+/* Seleccionamos todos los elemetos de la página */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+body {
+    background-color: rgb(239, 212, 250);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Definimos las propiedades generales del contenedor */
+#container {
+    width: 70%;
+    margin: 0px auto;
+    border: 1px solid black;
+}
+
+/* Propiedades del header */
+header {
+    background-color: red;
+    height: 100px;
+    width: 100%;
+    text-align: center; /* Alinear texto horizontalmente*/
+    line-height: 100px; /*Alinear texto verticalmente*/
+    color: white;
+    border-bottom: 3px dashed black;
+}
+
+nav {
+    background-color: lightblue;
+    height: 50px;
+    border-bottom: 1px solid black;
+}
+
+nav ul li {
+    float: left; /*Ubica los elemento del lado izquierdo del contenedor*/
+    list-style: none;
+    margin: 10px;
+    line-height: 30px;
+}
+
+.clearfix{
+    clear: both;
+}
+
+#content {
+    float: left;
+    width: calc(80% - 80px);
+    min-height: 500px;
+    background-color: green;
+    padding: 40px;
+}
+
+aside {
+    float: left;
+    width: calc(20% - 20px);
+    min-height: 500px;
+    background-color: orange;
+    /* Separando los elementos de la barra */
+    padding: 10px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
