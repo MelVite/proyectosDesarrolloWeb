@@ -104,32 +104,39 @@ body {
 .grid-templateareas {
     height: 650px;
     display: grid;
-    
+    grid-template-areas: 'cabecera cabecera'
+                        'menu menu'
+                        'contenido lateral'
+                        'footer footer';
+    grid-template-rows: 20% 10% auto 10%; /*Define el tamaño de las FILAS*/
+    grid-template-columns: auto 30%; /*define el tamaño de las columnas*/
     background-color: lightpink;
     border: 1px solid black;
 
 }
 
 .c1-gta {
-    grid-column: 1 / span 2;
+    grid-area: cabecera;
     background-color: lightskyblue;
 }
 
 .c2-gta {
-    grid-column: 1 / span 2;
+    grid-area: menu;
     background-color: palevioletred;
 }
 
 .c3-gta {
+    grid-area: contenido;
     background-color: lightsalmon;
 }
 
 .c4-gta {
+    grid-area: lateral;
     background-color: lightgoldenrodyellow;
 }
 
 .c5-gta {
-    grid-column: 1 / span 2;
+    grid-area: footer;
     color: white;
     background-color: black;
 }
