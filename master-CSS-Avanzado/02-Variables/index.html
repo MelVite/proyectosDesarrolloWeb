@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables en CSS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Variables en CSS</h1>
+    <h3>¿Qué es una variable?</h3>
+    <p>Son pequeños espacios en memoria de un programa donde se puede guardar información.</p>
+    <p>Para definir una variable se debe hacer dentro de la pseudo clase <b>root</b> y se utliza la siguiente <b>sintaxis:</b></p>
+    <code>
+        :root {
+            --nombre-variable: #7d009c;
+        }
+    </code>
+    <p>En este ejemplo tenemos una variable para un color, se puede guardar cualquier cosa.</p>
+    <p>Para aplicarlo en CSS para el titulo h1 es de la siguiente forma:</p>
+    <code>
+        h1 {
+            color: var(--nombre-variable);
+        }
+    </code>
+
+    <br>
+
+    <h3>¿Qué es la pseudoclase root?</h3>
+    <p>Es una clase que selecciona al elemento raíz que representa <b>TODO EL DOCUMENTO</b>, es decir, todo el HTML. De esta manera se definen variables de estilo de manera base.</p>
+</body>
+</html>

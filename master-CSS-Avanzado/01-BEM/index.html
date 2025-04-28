@@ -13,8 +13,10 @@
     <p><b>Es una forma de nombrar las clases.</b></p>
     <p>Para su aplicación se usa <b>siempre CLASS</b> en lugar de ID.</p>
     <h5>Sintaxis</h5>
-    <code>.bloque_elemento--modificador</code>
+    <code>.bloque__elemento--modificador</code>
 
+    <hr>
+    <h3>Forma clásica de trabajar</h3>
     <section class="cards">
         <div class="card">
             <h3>Tarjeta 1</h3>
@@ -39,7 +41,36 @@
             <p>Contenido tarjeta 4</p>
             <a href="#">DPRweb.com.eng</a>
         </div>
-        
+    </section>
+
+    <hr>
+
+    <h3>Forma de trabajar con BEM</h3>
+    <section class="cardsBEM"> <!--cardsBEM es el BLOQUE-->
+        <article class="cards__card"> <!--tenemos aquí Bloque__elemento-->
+            <h3 class="card__title">Tarjeta 1</h3>
+            <p class="card__content">Contenido tarjeta 1</p>
+            <a href="#" class="card__link">MelanioMuyMelanio.es</a>
+        </article>
+
+        <article class="cards__card"> 
+            <h3 class="card__title">Tarjeta 2</h3>
+            <p class="card__content">Contenido tarjeta 2</p>
+            <a href="#" class="card__link card__link--rojo">MelanioMuyMelanio.es</a>
+        </article>
+
+        <article class="cards__card"> 
+            <h3 class="card__title">Tarjeta 3</h3>
+            <p class="card__content">Contenido tarjeta 3</p>
+            <a href="#" class="card__link">MelanioMuyMelanio.es</a>
+        </article>
+
+        <article class="cards__card"> 
+            <h3 class="card__title">Tarjeta 4</h3>
+            <p class="card__content">Contenido tarjeta 4</p>
+            <a href="#" class="card__link card__link--rojo">MelanioMuyMelanio.es</a
+        </article>
+
     </section>
 </body>
 </html>

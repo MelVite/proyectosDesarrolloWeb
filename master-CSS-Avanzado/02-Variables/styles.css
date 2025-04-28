@@ -1,0 +1,20 @@
+body {
+    background-color: rgb(219, 203, 234);
+}
+
+:root{
+    --nombre-variable: #7d009c;
+    --fuente: Arial, Verdana;
+    --fuente-size: 45px;
+}
+
+/* Forma de aplicar las variables */
+h1 {
+    color: var(--nombre-variable);
+    font-family: var(--fuente);
+    font-size: var(--fuente-size);
+}
+
+p {
+    font-family: var(--fuente);
+}
