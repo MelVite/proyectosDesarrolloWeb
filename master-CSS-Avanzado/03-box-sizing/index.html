@@ -8,7 +8,15 @@
 </head>
 <body>
     <h1>Box Sizing en CSS</h1>
-    <p>La propiedad <code>box-sizing</code> indica cómo se debe calcular las medidas de un elemento. Esto, que parece trivial, no lo es tanto ya que por defecto <b>CSS considera que el ancho y alto de la caja es de las propiedades width y height</b>. ¿Qué significa esto? Pues que si le añades un padding o un border el tamaño de renderizado de la caja será: <b>width + padding + border</b>.</p>
+    <p>La propiedad <code>box-sizing</code> indica cómo se debe calcular las medidas de un elemento.</p>
+    <p>Por defecto en el modelo de caja, el ancho y alto asignado a un elemento es aplicado solo al contenido de la caja del elemento. Si el elemento tiene algún borde/border o relleno/padding, este es <b>añadido al ancho y alto</b> del tamaño de la caja <code>content-box</code>. Esto significa que cuando se define el ancho y alto, se tiene que ajustar el valor definido para permitir cualquier borde a relleno que se pueda añadir.</p>
+    <h3>Sintaxis</h3>
+    <p>La propiedad <code>box-sizing</code> es especificada como una sola palabra clave elegida con dos posibles valores:</p>
+    <ul>
+        <li><code>content-box</code> Es el valor por defecto, las propiedades width y height <b>NO</b> incluyen el borde, relleno o margen.</li>
+        <br>
+        <li><code>border-box</code> Las propiedades de width y height <b>incluyen</b> el contenido, relleno y borde <b>pero no incluyen margén.</b></li>
+    </ul>
 
 
     <div class="caja">

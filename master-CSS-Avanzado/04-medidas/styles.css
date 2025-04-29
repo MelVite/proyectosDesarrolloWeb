@@ -1,0 +1,23 @@
+body {
+    font-size: 20px;
+}
+
+.caja1 {
+    font-size: 20px;
+    width: 50%;
+    height: 300px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: aquamarine;
+    border: 1px solid black;
+}
+
+.caja2 {
+    font-size: 2em; /*Son 20px * 2 = 40px*/
+    width: 12em; 
+    height: 12em;
+    /* margin: 0 auto; */
+    text-align: center;
+    background-color: rgb(170, 255, 127);
+    border: 1px solid black;
+}
