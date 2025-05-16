@@ -3,6 +3,31 @@
     padding: 0;
 }
 
+/* Crear la animacion */
+@keyframes botar {
+    0% {
+        transform: translateY(-200%);
+    }
+
+    50% {
+        transform: translateY(0%);
+    }
+
+    100% {
+        transform: translateY(-200%);
+    }
+}
+
 .navegacion {
-    background-color: red;
+    transform: translateY(-200%);
+    animation-name: botar;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+.menu li{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 15px;
 }
